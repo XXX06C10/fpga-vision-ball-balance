@@ -1,0 +1,11 @@
+Composed vision_monitor_all.v
+FAST_FAULT_PASS code=3 spent=0 hold=1
+FAST_FAULT_PASS code=7 spent=0 hold=1
+FAST_FAULT_PASS code=8 spent=0 hold=1
+FAST_FAULT_PASS code=6 spent=0 hold=1
+FAST_FAULT_PASS code=1 spent=4 hold=1
+FAST_FAULT_PASS code=2 spent=8 hold=1
+FAST_FAULT_PASS code=4 spent=3 hold=1
+FAST_FAULT_PASS code=5 spent=64 hold=1
+FAST_ALL_PASS: all8faults actual fast path,64pulse budget andholding EN
+sim/tb_fast.v:25: $finish called at 45080000 (1ps)

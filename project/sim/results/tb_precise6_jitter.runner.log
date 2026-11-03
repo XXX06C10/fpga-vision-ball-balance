@@ -1,0 +1,6 @@
+Composed vision_monitor_all.v
+PRECISE6_NOISE_FREE_EQUIVALENCE_PASS static_and_motion
+PRECISE5_JITTER_REPRO_PASS old_cancelled=288 new_near64
+PRECISE6_COORDINATE_REPLAY new_assist=133 old_assist=62
+PRECISE6_JITTER_PASS acquired8pxjitter,near64,far96,realmotion,slowwithdraw,invalid,stale,stop,K3
+sim/tb_precise6_jitter.v:217: $finish called at 157950000 (1ps)

@@ -1,0 +1,7 @@
+Composed vision_monitor_all.v
+CHECKPOINT_FINISH_GUARD_PASS failure=1 fault=1 originalguardlatched
+CHECKPOINT_FINISH_GUARD_PASS failure=2 fault=2 originalguardlatched
+CHECKPOINT_FINISH_RECOVERY_PASS realAB,bias6,remainingbudget,actualarrival,NOREBASE,maxspent=56,ms=1611
+CHECKPOINT_LEGACY_REPRO_PASS 48pulse residual rejection waits5s thenF4
+CHECKPOINT_FINISH_PASS legacyF4reproduced,boundedrealarrival,noresponse/reverseguards,budget/time/originpreserved
+sim/tb_checkpoint_finish.v:47: $finish called at 2691185000 (1ps)

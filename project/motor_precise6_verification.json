@@ -1,0 +1,204 @@
+{
+  "status": "SOFTWARE_AND_ROUTING_PASS_PHYSICAL_PENDING",
+  "device": "PH1P35MDG324",
+  "timing_ns": {
+    "SWNS": 0.031,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "resources": {
+    "slice": 20702,
+    "register": 20868,
+    "IO": 76,
+    "ERAM": 66,
+    "DSP": 39
+  },
+  "sha256": "f29b6aa11420824540579d4b810b0ec46adca27577c0e077414b5166491f6c18",
+  "mirror_drivers": {
+    "O_motor_step": "O_motor_step_v2_dup_1",
+    "O_motor_step_v2": "O_motor_step_v2_dup_1",
+    "O_motor_dir": "O_motor_dir_v1_dup_1",
+    "O_motor_dir_v1": "O_motor_dir_v1_dup_1",
+    "O_motor_en": "\\u_vision_monitor/motor_core/done_i3_syn_8",
+    "O_motor_en_u2": "\\u_vision_monitor/motor_core/done_i3_syn_8"
+  },
+  "preserved_sources": 204,
+  "known_reference_clock_notices": [
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate O_cam_24m_syn_3 has mixed fanouts of 249 clock pins; 1 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate u_uicfgcs500/uii2c_inst/scl_clk has mixed fanouts of 1 clock pins; 2 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets."
+  ],
+  "physical_validation": "PENDING",
+  "programmed": false,
+  "osd_equivalence": {
+    "file": "user_source/hdl_source/osd_overlay.v",
+    "original_sha256": "3359733f7236e62afc03af1f158d439725d06f2b37c16f494b85309cb46934ee",
+    "current_sha256": "a2c2274fd4d0087eda379dd459805f6d51572d217e5de87cccf306844bbd923e",
+    "equivalence_log": "evidence/osd_area_candidate/test.log",
+    "compared_pixels": 786432,
+    "behavior": "select mutually exclusive text region before a shared combinational font lookup; same pixels and pipeline latency"
+  },
+  "serial_equivalence": {
+    "rtl/vision_report_tx.v": {
+      "before": "941848edf129ace46872529f2c9e7a135084ac9613ed5d3d14ea13548e515911",
+      "after": "afe9e1a6746cbbf755312a532a864b740b04edc3b8a2d1a41f5490ec45a14c59",
+      "area_change": "share ASCII hex conversion after selecting the original 4-bit field; registers and serial state machine unchanged"
+    },
+    "rtl/vision_cascade_diag.v": {
+      "before": "cad487a19c16f160dc9050f469bc30443b9a8fe2ad58f537268b51a147900ce0",
+      "after": "1137a200acbc1bd1071dd45b7c6812edc9af2bf074b5eeab772b7047b077e7e8",
+      "area_change": "Shared payload ASCII conversion, explicit combinational D2/CR/LF gates; no inferred framing ROM. Sequential logic unchanged."
+    }
+  },
+  "uart_fix": {
+    "status": "PREBUILD_TESTS_PASS",
+    "real_log_vis_recovered": 100,
+    "replay_chunks": [
+      1,
+      7,
+      31,
+      256,
+      4096
+    ],
+    "mapped_core_frames": 8,
+    "simulation_adapter": "Only 38 SDR pads bypassed; mapped LUTs/registers use plaintext Anlogic models, preprocessed without FORMAL_VERIFICATION. Physical timing checked separately.",
+    "files": {
+      "rtl/vision_cascade_diag.v": "1137a200acbc1bd1071dd45b7c6812edc9af2bf074b5eeab772b7047b077e7e8",
+      "host/brake_precise6_panel_cn.ps1": "c34760831299aa640fc9e718e7cbba5e65a041d80599c01b42a06e65bd185b29",
+      "host/merged_uart_receive.ps1": "1a626e845c8af28656c4fc484c93568a391532a09ac79260ce452f1fdaca42f1",
+      "host/test_merged_uart_receive.ps1": "8eb6de928f2c80194ca806b740368fdc8144d56755eeda69932226c0fca706e4",
+      "evidence/uart_fix_20261029/host_selftest.log": "3ab9ea9f5f40bfa8e6725de097bdba3b6c1e1dee0a800c25443ccc3cfa07d025",
+      "evidence/uart_fix_20261029/host_replay.log": "845bbe18da5259303a316723ea587456708702c8d9e00b03aecdc8bf4f8eebae",
+      "evidence/uart_fix_20261029/mapped_diag/diag.v": "2b82224d1044146e71620f56e44c1dc5582650dff3fb163819b008fc298d8c19",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate.v": "d070dc55c6a391749d33f2d325e6d162e599b2b40697e1726f0b3140838e36c8",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate.area": "968e1a854b6601a7290b39522d34857e0dee545ffe027dca2ba3affe8b5c79a9",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate_sdr_adapter.v": "374c12b71e187e0ca290600b169a1b823fe0e021428ec498c0a07d6601872b9d",
+      "evidence/uart_fix_20261029/mapped_diag/models_preprocessed.v": "888f6e61902ba64b56da2c1a3df4ddb8d677198d5a43424d6a63ddb9839606e0",
+      "evidence/uart_fix_20261029/mapped_diag/tb_mapped.v": "ff29bb7b3cca695b951a49f3eecc91c6f436503e5e92c50b457da0640dca8391",
+      "evidence/uart_fix_20261029/mapped_diag/test.combined.v": "444b398d1b76a7e0b2c6d8740291c2229c4d93cb96ee7842b5248f9362087f7f",
+      "evidence/uart_fix_20261029/mapped_diag/test.log": "a34f94f5d07bb2c3930d4b9043c2941f5d9cb8a2ccd6a60541ffd81ce0561e6b"
+    }
+  },
+  "suites": {
+    "tb_fast": {
+      "status": "PASS",
+      "seconds": 1.25,
+      "log_sha256": "de50d330eefecdff375f174a52b6bd10ae1c435c53847a26b2192ba6d4bda952"
+    },
+    "tb_motion": {
+      "status": "PASS",
+      "seconds": 1.34,
+      "log_sha256": "1525e170d9432f8272ecb5c9187ba4b09fccfbd5825b62d24aa8c558095ece6e"
+    },
+    "tb_hold": {
+      "status": "PASS",
+      "seconds": 0.8,
+      "log_sha256": "1e910353cbad517b84337430a06d966f6f1a164359ddd858a870b264ced3f58e"
+    },
+    "tb_cascade_config": {
+      "status": "PASS",
+      "seconds": 0.92,
+      "log_sha256": "42a12ae7563d53a0edbbcb1492b0d9a5cae17f011e5af7e67313fcfc4c4f4e00"
+    },
+    "tb_asym_limits": {
+      "status": "PASS",
+      "seconds": 0.7,
+      "log_sha256": "84b0d47c955766d5100fa6fc5f5348d2cdf25b80ba125d7db339a1a42620b8e2"
+    },
+    "tb_asym_faults": {
+      "status": "PASS",
+      "seconds": 0.97,
+      "log_sha256": "95350a942555fbe2292e35e60b9ff652469e6e9b470270d42039a70d85b3271d"
+    },
+    "tb_asym_edges": {
+      "status": "PASS",
+      "seconds": 0.77,
+      "log_sha256": "6a5069b94b83d30c4043bd0c547add87306456b9d177f650551ecde1ec5a508d"
+    },
+    "tb_tail_checkpoint": {
+      "status": "PASS",
+      "seconds": 2.75,
+      "log_sha256": "5bfcbff2633411ea559320fb7173c0cb82e27e00d284211b6191173d5de5de9d"
+    },
+    "tb_smooth_policy": {
+      "status": "PASS",
+      "seconds": 0.8,
+      "log_sha256": "397beabc2d628a4bcdc28794e01428c474eb326558f357971196b5c272f92b55"
+    },
+    "tb_region100_policy": {
+      "status": "PASS",
+      "seconds": 0.7,
+      "log_sha256": "0fa01624dd7b61f2926b475452d8d21041423db553be6eae9a887f61a1a10f0b"
+    },
+    "tb_brake_fast_policy": {
+      "status": "PASS",
+      "seconds": 0.7,
+      "log_sha256": "cf004322ade55929f0efaef7565de275a639eee3e15ee766c7de7f67f775bf3d"
+    },
+    "tb_loss": {
+      "status": "PASS",
+      "seconds": 11.89,
+      "log_sha256": "dad3a16f25963b3f89b5e6e8589d45817e56476376e020ba822312bba3265292"
+    },
+    "tb_full": {
+      "status": "PASS",
+      "seconds": 32.0,
+      "log_sha256": "e342a5114655d8b9a041645e094993d7f0d7ed15cbfab064ddff10655b8b15c9"
+    },
+    "tb_checkpoint_finish": {
+      "status": "PASS",
+      "seconds": 42.89,
+      "log_sha256": "7c34124720ad0d2e049e83cdbe42abf96c852d614374383d4ce2933851ddce16"
+    },
+    "tb_brake_fast_runtime": {
+      "status": "PASS",
+      "seconds": 68.88,
+      "log_sha256": "d21dc8e34d1ac5e0ab1d39d7b80d7790a4aa7ac0adb6b66a2864ff131d0c8c25"
+    },
+    "tb_core_fallback": {
+      "status": "PASS",
+      "seconds": 0.7,
+      "log_sha256": "8152765466048b1b0112a5dd5505abec0827cd5111a3991e5630e5d9abdf54cd"
+    },
+    "tb_reversal_recovery": {
+      "status": "PASS",
+      "seconds": 0.75,
+      "log_sha256": "65bf64d97eb6fa09c58bbfe83b55d0e221dc186ad7a4e38f48cd38e267d09df7"
+    },
+    "tb_precise3_policy": {
+      "status": "PASS",
+      "seconds": 0.61,
+      "log_sha256": "ec460b9412cf42f0807a314ef8c60d464e50e40a564d4582b0acd4443cf3be94"
+    },
+    "tb_precise4_noise": {
+      "status": "PASS",
+      "seconds": 0.67,
+      "log_sha256": "88ce84ed5e2365712cfe90770a600b03eb5a3f5cd9211566c065e46189cc3c03"
+    },
+    "tb_precise5_escape": {
+      "status": "PASS",
+      "seconds": 0.78,
+      "log_sha256": "905044bdbfeece51bbc366f4fe53a40c9870fb1c836d0dd3bf67591a55acf650"
+    },
+    "tb_precise6_jitter": {
+      "status": "PASS",
+      "seconds": 0.73,
+      "log_sha256": "44dcc716b6c86b387637c87c754e44ad725a066172c58f3ed8c5acbcb3c51552"
+    },
+    "tb_brake_fast_plant": {
+      "status": "PASS",
+      "seconds": 77.12,
+      "log_sha256": "7b55485714a21a3c624f94b330f06d35113722f5f77e40eb1fc9f2b5ad673012"
+    },
+    "tb_brake_fast_clock50": {
+      "status": "PASS",
+      "seconds": 66.59,
+      "log_sha256": "3f78c7dfc113dcffca835a6fef8619ee3d0316a203a94796bb5aeee96a0e3e3a"
+    }
+  },
+  "bit": "output/merged_vision_motor_logo_brake_precise6_uartfix.bit",
+  "original_video_and_logo_preserved": true,
+  "motor_source": "brake_precise6",
+  "display_prediction_imported": false
+}

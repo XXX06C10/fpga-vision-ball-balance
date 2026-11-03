@@ -1,0 +1,7 @@
+Composed vision_monitor_all.v
+BRAKE_FAST_PLANT_CASE_PASS id=30 B=-5.000000 peak=100.000000 RMS=46.826300 final=-54.930602 velocity=-1.976475
+PLANT_BRAKING_METRIC id=30 settle_ms=-1 overshoot=0.000000
+BRAKE_FAST_PLANT_CASE_PASS id=31 B=-20.000000 peak=498.500300 RMS=60.131983 final=48.253158 velocity=-2.676567
+PLANT_BRAKING_METRIC id=31 settle_ms=-1 overshoot=471.491629
+BRAKE_FAST_CLOCK50_PASS weakand1500pxs,original50clocks_ms,same100px_and25pxs_criteria
+sim/tb_brake_fast_clock50.v:6: $finish called at 9151880000 (1ps)

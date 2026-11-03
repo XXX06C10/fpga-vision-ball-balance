@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.vvp
+*.vcd
+*.fst
+*.lock.f
+*_Runs/
+.env
+.env.*
+*.pem
+*.key
+Thumbs.db

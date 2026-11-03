@@ -1,0 +1,6 @@
+Composed vision_monitor_all.v
+PRECISE4_ANCHOR_REPRO_PASS old96 new6144 after5pxdrift
+PRECISE5_NEAR_ESCAPE_PASS parent24 new64 arrival_gated_30frames
+PRECISE5_FAR_ESCAPE_PASS far96 bounded
+PRECISE5_ESCAPE_PASS anchorrearm,near64,far96,arrivalgate,motionwithdraw,polarity,bounds,slowdrift,hold,resets
+sim/tb_precise5_escape.v:48: $finish called at 316470000 (1ps)

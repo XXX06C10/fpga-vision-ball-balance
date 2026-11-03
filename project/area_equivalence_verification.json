@@ -1,0 +1,38 @@
+{
+  "osd": {
+    "status": "PASS",
+    "marker": "OSD_PIXEL_EQUIVALENCE_PASS compared=786432",
+    "inputs": {
+      "evidence/osd_area_candidate/osd_overlay_original.v": "ce40c83e510f791a3ae93ed1b0e27d7d65a1ff7c62afc8074e0f474932266b5e",
+      "evidence/osd_area_candidate/osd_overlay.v": "a2c2274fd4d0087eda379dd459805f6d51572d217e5de87cccf306844bbd923e",
+      "evidence/osd_area_candidate/tb_osd_equivalence.v": "367df401eedac423c8ffeef98f3605aef9ed7dea319c9f10c0093bcdcf6a2def"
+    },
+    "combined": {
+      "path": "evidence/osd_area_candidate/combined.v",
+      "sha256": "844c0dd2acf4abbb2d307805989ed14395684629f38380217d4394564b9de612"
+    },
+    "log": {
+      "path": "evidence/osd_area_candidate/test.log",
+      "sha256": "df0f414f911e97e754ead18d3379971e4aec628a68ef3c04059698321dec78e8"
+    }
+  },
+  "serial": {
+    "status": "PASS",
+    "marker": "SERIAL_BYTE_EQUIVALENCE_PASS VIS_indices=1048576 D2_indices=524288",
+    "inputs": {
+      "evidence/serial_area/vision_report_tx_original.v": "26550193a30139df767b058b4a020c67f8dc299efe577dcc6ab9f71eaaf7730d",
+      "rtl/vision_report_tx.v": "afe9e1a6746cbbf755312a532a864b740b04edc3b8a2d1a41f5490ec45a14c59",
+      "evidence/serial_area/vision_cascade_diag_original.v": "a0cd6c4f40e1346b69e61e131f3be11128127a03e9c5fec9822710d9ee9eaed4",
+      "rtl/vision_cascade_diag.v": "1137a200acbc1bd1071dd45b7c6812edc9af2bf074b5eeab772b7047b077e7e8",
+      "evidence/serial_area/tb_serial_equivalence.v": "6c56a5d5445063f1e3e153beb491ebf9e4ae3bf6d5c24d37d03cbf31371f922a"
+    },
+    "combined": {
+      "path": "evidence/serial_area/combined.v",
+      "sha256": "b48e3cca99ddafbeea2a0ea73f06af39110147aebab1d796dd84d2d1e20c6613"
+    },
+    "log": {
+      "path": "evidence/serial_area/test.log",
+      "sha256": "49bef2ccd9f390f89b40653f5d14dd11ef7c608e86f3c2aa8262c7b995d48736"
+    }
+  }
+}

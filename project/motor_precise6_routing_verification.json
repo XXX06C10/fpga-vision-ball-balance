@@ -1,0 +1,83 @@
+{
+  "status": "ROUTING_PASS",
+  "device": "PH1P35MDG324",
+  "timing_ns": {
+    "SWNS": 0.031,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "resources": {
+    "slice": 20702,
+    "register": 20868,
+    "IO": 76,
+    "ERAM": 66,
+    "DSP": 39
+  },
+  "sha256": "f29b6aa11420824540579d4b810b0ec46adca27577c0e077414b5166491f6c18",
+  "mirror_drivers": {
+    "O_motor_step": "O_motor_step_v2_dup_1",
+    "O_motor_step_v2": "O_motor_step_v2_dup_1",
+    "O_motor_dir": "O_motor_dir_v1_dup_1",
+    "O_motor_dir_v1": "O_motor_dir_v1_dup_1",
+    "O_motor_en": "\\u_vision_monitor/motor_core/done_i3_syn_8",
+    "O_motor_en_u2": "\\u_vision_monitor/motor_core/done_i3_syn_8"
+  },
+  "preserved_sources": 204,
+  "known_reference_clock_notices": [
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate O_cam_24m_syn_3 has mixed fanouts of 249 clock pins; 1 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5060 CRITICAL-WARNING: Clock net candidate u_uicfgcs500/uii2c_inst/scl_clk has mixed fanouts of 1 clock pins; 2 data/ctrl pins. Please check connection of the net in design.",
+    "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets."
+  ],
+  "physical_validation": "PENDING",
+  "programmed": false,
+  "osd_equivalence": {
+    "file": "user_source/hdl_source/osd_overlay.v",
+    "original_sha256": "3359733f7236e62afc03af1f158d439725d06f2b37c16f494b85309cb46934ee",
+    "current_sha256": "a2c2274fd4d0087eda379dd459805f6d51572d217e5de87cccf306844bbd923e",
+    "equivalence_log": "evidence/osd_area_candidate/test.log",
+    "compared_pixels": 786432,
+    "behavior": "select mutually exclusive text region before a shared combinational font lookup; same pixels and pipeline latency"
+  },
+  "serial_equivalence": {
+    "rtl/vision_report_tx.v": {
+      "before": "941848edf129ace46872529f2c9e7a135084ac9613ed5d3d14ea13548e515911",
+      "after": "afe9e1a6746cbbf755312a532a864b740b04edc3b8a2d1a41f5490ec45a14c59",
+      "area_change": "share ASCII hex conversion after selecting the original 4-bit field; registers and serial state machine unchanged"
+    },
+    "rtl/vision_cascade_diag.v": {
+      "before": "cad487a19c16f160dc9050f469bc30443b9a8fe2ad58f537268b51a147900ce0",
+      "after": "1137a200acbc1bd1071dd45b7c6812edc9af2bf074b5eeab772b7047b077e7e8",
+      "area_change": "Shared payload ASCII conversion, explicit combinational D2/CR/LF gates; no inferred framing ROM. Sequential logic unchanged."
+    }
+  },
+  "uart_fix": {
+    "status": "PREBUILD_TESTS_PASS",
+    "real_log_vis_recovered": 100,
+    "replay_chunks": [
+      1,
+      7,
+      31,
+      256,
+      4096
+    ],
+    "mapped_core_frames": 8,
+    "simulation_adapter": "Only 38 SDR pads bypassed; mapped LUTs/registers use plaintext Anlogic models, preprocessed without FORMAL_VERIFICATION. Physical timing checked separately.",
+    "files": {
+      "rtl/vision_cascade_diag.v": "1137a200acbc1bd1071dd45b7c6812edc9af2bf074b5eeab772b7047b077e7e8",
+      "host/brake_precise6_panel_cn.ps1": "c34760831299aa640fc9e718e7cbba5e65a041d80599c01b42a06e65bd185b29",
+      "host/merged_uart_receive.ps1": "1a626e845c8af28656c4fc484c93568a391532a09ac79260ce452f1fdaca42f1",
+      "host/test_merged_uart_receive.ps1": "8eb6de928f2c80194ca806b740368fdc8144d56755eeda69932226c0fca706e4",
+      "evidence/uart_fix_20261029/host_selftest.log": "3ab9ea9f5f40bfa8e6725de097bdba3b6c1e1dee0a800c25443ccc3cfa07d025",
+      "evidence/uart_fix_20261029/host_replay.log": "845bbe18da5259303a316723ea587456708702c8d9e00b03aecdc8bf4f8eebae",
+      "evidence/uart_fix_20261029/mapped_diag/diag.v": "2b82224d1044146e71620f56e44c1dc5582650dff3fb163819b008fc298d8c19",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate.v": "d070dc55c6a391749d33f2d325e6d162e599b2b40697e1726f0b3140838e36c8",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate.area": "968e1a854b6601a7290b39522d34857e0dee545ffe027dca2ba3affe8b5c79a9",
+      "evidence/uart_fix_20261029/mapped_diag/diag_gate_sdr_adapter.v": "374c12b71e187e0ca290600b169a1b823fe0e021428ec498c0a07d6601872b9d",
+      "evidence/uart_fix_20261029/mapped_diag/models_preprocessed.v": "888f6e61902ba64b56da2c1a3df4ddb8d677198d5a43424d6a63ddb9839606e0",
+      "evidence/uart_fix_20261029/mapped_diag/tb_mapped.v": "ff29bb7b3cca695b951a49f3eecc91c6f436503e5e92c50b457da0640dca8391",
+      "evidence/uart_fix_20261029/mapped_diag/test.combined.v": "444b398d1b76a7e0b2c6d8740291c2229c4d93cb96ee7842b5248f9362087f7f",
+      "evidence/uart_fix_20261029/mapped_diag/test.log": "a34f94f5d07bb2c3930d4b9043c2941f5d9cb8a2ccd6a60541ffd81ce0561e6b"
+    }
+  }
+}

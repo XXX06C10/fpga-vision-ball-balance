@@ -1,0 +1,3 @@
+Composed vision_monitor_all.v
+ASYM_LIMITS_PASS inward -182/+364 target,-204/+398 feedback,-159/+310 pulse limits,fixed K3 anchor
+sim/tb_asym_limits.v:14: $finish called at 110000 (1ps)

@@ -1,0 +1,4 @@
+Composed vision_monitor_all.v
+SMOOTH_GOLD_EQUIVALENCE_PASS 600realupdates,upto1600pixels_s,bothsigns,4framevelocity,PD,50/100/200limits,nonzeroN
+SMOOTH_POLICY_PASS exacttrustedmiddle,fullwindow,noP.Lcap,livezone,invalidfreeze
+sim/tb_smooth_policy.v:24: $finish called at 60860000 (1ps)

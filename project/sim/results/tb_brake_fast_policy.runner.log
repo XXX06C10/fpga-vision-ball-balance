@@ -1,0 +1,4 @@
+Composed vision_monitor_all.v
+BRAKE_FAST_REPLAY_PASS e27,v1086,Pminus26:opposite target,200Hz,256counts_s
+BRAKE_FAST_POLICY_PASS earlybraking,200px_sgoal,125mslookahead,fullwindow,precision35_exit70,farstiction_escape,invalidfreeze
+sim/tb_brake_fast_policy.v:31: $finish called at 17130000 (1ps)

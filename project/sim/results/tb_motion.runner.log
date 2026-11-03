@@ -1,0 +1,12 @@
+Composed vision_monitor_all.v
+PASS fault 3: latched, output stopped, no re-enable bypass
+PASS fault 4: latched, output stopped, no re-enable bypass
+PASS fault 6: latched, output stopped, no re-enable bypass
+PASS fault 7: latched, output stopped, no re-enable bypass
+PASS fault 8: latched, output stopped, no re-enable bypass
+PASS fault 5: latched, output stopped, no re-enable bypass
+PASS fault 2: latched, output stopped, no re-enable bypass
+PASS fault 1: latched, output stopped, no re-enable bypass
+PASS finite motion: snapshot, positive/zero/negative feedback, busy/held rejection, all cancellation paths and no auto-resume
+MOTION_GUARDS_PASS
+sim/tb_motion.v:84: $finish called at 13440000 (1ps)

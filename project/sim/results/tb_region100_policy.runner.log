@@ -1,0 +1,4 @@
+Composed vision_monitor_all.v
+REGION100_REPLAY_PASS same90pxstatic:legacy+11.25counts,newneutral,noamplitudeclamp
+REGION100_POLICY_PASS capture90_exit100,noise_hysteresis,low_speed_qualification,softfine20Hz12counts_s,full_fixed_window,noP.Lclamp,invalidfreeze,polarity
+sim/tb_region100_policy.v:38: $finish called at 7660000 (1ps)

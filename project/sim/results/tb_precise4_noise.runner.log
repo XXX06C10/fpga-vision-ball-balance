@@ -1,0 +1,4 @@
+Composed vision_monitor_all.v
+PRECISE3_NOISE_REPRO_PASS parent target=2304 new=-6144 rawcoordinate jitter6px
+PRECISE4_NOISE_PASS parked47and210,80px_sfakevelocity,realmotionexit,slowdriftreject,centrehold,invalidreset
+sim/tb_precise4_noise.v:28: $finish called at 31190000 (1ps)

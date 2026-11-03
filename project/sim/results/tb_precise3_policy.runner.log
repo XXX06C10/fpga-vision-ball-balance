@@ -1,0 +1,3 @@
+Composed vision_monitor_all.v
+PRECISE3_POLICY_PASS jitter44_47,stages8_16_24,motionwithdraw,trend35capture,invalidreset
+sim/tb_precise3_policy.v:29: $finish called at 15850000 (1ps)

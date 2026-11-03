@@ -1,0 +1,3 @@
+Composed vision_monitor_all.v
+CORE_FALLBACK_PASS forcedzeroCredit emitsSTEP,F1realnoresponse,SP=3
+sim/tb_core_fallback.v:22: $finish called at 40475000 (1ps)

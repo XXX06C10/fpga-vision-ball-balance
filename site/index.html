@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FPGA视觉球杆平衡闭环控制：用图像感知位置，以反馈调节运动。作品实景、功能和演示说明。">
+<title>FPGA 视觉球杆平衡 · 作品展示</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="#"><span class="mark">B<span>·</span></span> VISION / BALANCE</a><nav aria-label="主导航"><a href="#work">作品</a><a href="#gallery">展示</a><a href="#demo">演示</a><a href="https://github.com/XXX06C10/fpga-vision-ball-balance">GitHub ↗</a></nav></header>
+<main>
+<section class="hero" id="work">
+<div class="intro"><p class="eyebrow">FPGA ENGINEERING PROJECT / 2026</p><h1>看见运动。<br>以反馈，<em>寻找平衡。</em></h1><p class="lead">FPGA 视觉球杆平衡闭环控制</p><p class="desc">把摄像头、小球、球杆和电机连接起来。<br>从识别位置到调整姿态，让控制过程清晰可见。</p><div class="actions"><a class="button" href="#gallery">查看作品展示 <span>↗</span></a><a class="textlink" href="#flow">它如何工作 ↓</a></div><div class="tags"><span>安路 PH1P35</span><span>单轴视觉闭环</span><span>实时图像显示</span></div></div>
+<figure class="hero-photo"><img src="../assets/platform.png" alt="球杆机构、摄像头、FPGA开发板与显示屏组成的真实实验平台"><div class="photo-label"><span class="dot"></span> 作品平台实景 <small>FROM PROJECT REPORT</small></div><figcaption>已有报告中的实物照片 · 未绑定当前固件版本</figcaption></figure>
+</section>
+<section class="principle" id="flow"><div class="section-head"><p class="eyebrow">01 / THE IDEA</p><h2>一个闭环，连接感知与行动。</h2><p>让 FPGA 同时承担视觉处理、控制执行和画面输出。</p></div><div class="flow"><div><span>01</span><h3>看见</h3><p>摄像头采集画面<br>定位小球与识别区域</p></div><i aria-hidden="true">→</i><div><span>02</span><h3>判断</h3><p>结合位置与运动趋势<br>决定调整方向与强度</p></div><i aria-hidden="true">→</i><div><span>03</span><h3>调整</h3><p>电机改变球杆姿态<br>编码器反馈执行状态</p></div><i aria-hidden="true">↻</i><div><span>04</span><h3>再观察</h3><p>小球位置持续更新<br>反馈进入下一次调节</p></div></div></section>
+<section class="features"><div class="section-head"><p class="eyebrow">02 / WHAT WE BUILT</p><h2>不止让小球动起来。</h2><p>也让每一步判断、调整和观察都有明确的出口。</p></div><div class="feature-grid"><article><span class="icon">◎</span><h3>视觉识别</h3><p>输出小球位置与外框，支持配置 ROI，让系统在指定范围内寻找目标。</p><span class="micro">从画面到坐标</span></article><article><span class="icon">↔</span><h3>反馈与制动</h3><p>结合球位置、运动趋势和编码器反馈，采用分区调节与提前制动策略。</p><span class="micro">从位置到行动</span></article><article><span class="icon">▥</span><h3>可视化调试</h3><p>HDMI 展示图像与状态，上位机调整参数并记录遥测，方便观察和复盘。</p><span class="micro">从过程到理解</span></article></div></section>
+<section class="gallery" id="gallery"><div class="section-head split"><div><p class="eyebrow">03 / SEE THE PROJECT</p><h2>把处理过程，展示出来。</h2></div><p>原图、二值、边缘与目标显示。<br>以下为已有项目报告中的实拍素材。</p></div><div class="gallery-grid"><figure><img src="../assets/display-original.png" loading="lazy" alt="摄像头原图与状态叠加显示照片"><figcaption><b>01 / 图像与状态</b><span>现场画面，直观观察</span></figcaption></figure><figure><img src="../assets/display-binary.png" loading="lazy" alt="二值化图像显示照片"><figcaption><b>02 / 二值化显示</b><span>突出明暗与结构</span></figcaption></figure><figure><img src="../assets/display-edges.png" loading="lazy" alt="边缘图像显示照片"><figcaption><b>03 / 边缘显示</b><span>观察轮廓提取效果</span></figcaption></figure><figure><img src="../assets/display-mask.png" loading="lazy" alt="目标掩码显示照片"><figcaption><b>04 / 目标显示</b><span>聚焦小球所在区域</span></figcaption></figure></div></section>
+<section class="panel"><div><p class="eyebrow">OBSERVE / CONFIGURE / REVIEW</p><h2>控制在 FPGA。<br>观察在你眼前。</h2><p>通过上位机调整曝光、增益、识别区域和控制参数，查看遥测与日志，让硬件调试更直观。</p><p class="note">截图用于展示界面。图中曲线不作为当前版本稳定性或平衡精度的证明。</p></div><figure><img src="../assets/panel-telemetry.png" loading="lazy" alt="项目已有报告中的上位机遥测面板"><figcaption>已有报告中的上位机界面</figcaption></figure></section>
+<section class="demo" id="demo"><div class="section-head"><p class="eyebrow">04 / WALK THROUGH THE DEMO</p><h2>一次演示，看懂整套系统。</h2><p>依据当前源码整理的操作流程，实际演示需完成平台检查。</p></div><ol class="steps"><li><span>1</span><div><h3>看画面</h3><p>确认相机、识别区域和小球标记。</p></div></li><li><span>2</span><div><h3>设中心</h3><p>K1 使能，满足条件后 K3 记录参考。</p></div></li><li><span>3</span><div><h3>启闭环</h3><p>K2 启停，观察球位置与机构动作。</p></div></li><li><span>4</span><div><h3>看反馈</h3><p>观察遥测；K4 停止并切换显示。</p></div></li></ol></section>
+<section class="status"><div><p class="eyebrow">PROJECT STATUS</p><h2>已有实现，保留证据边界。</h2></div><div class="status-copy"><p><b>已具备：</b>视觉、显示、单轴控制与上位机工程；已有 23 项电机回归 PASS 记录和 TD 布线结果。</p><p><b>待补充：</b>绑定当前 bit 的连续演示视频，以及回中时间、稳态误差与扰动恢复实测。</p><a href="../docs/VALIDATION.md">查看验证记录 ↗</a></div></section>
+<section class="resources"><p class="eyebrow">EXPLORE FURTHER</p><h2>想继续了解？从这里开始。</h2><div><a href="https://github.com/XXX06C10/fpga-vision-ball-balance">项目仓库 <span>↗</span></a><a href="../docs/GETTING_STARTED.md">工程使用说明 <span>↗</span></a><a href="../docs/WIRING.md">硬件接线资料 <span>↗</span></a></div></section>
+</main><footer><span>FPGA 视觉球杆平衡闭环控制</span><span>PH1P35MDG324 · 单轴系统 · 2026</span><a href="../docs/MEDIA.md">图片来源与说明 ↗</a></footer>
+</body></html>

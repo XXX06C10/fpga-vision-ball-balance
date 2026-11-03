@@ -1,0 +1,3 @@
+Composed vision_monitor_all.v
+CASCADE_CONFIG_PASS:23bounds,XOR,line-start framing,timeout/recovery,LF atomicity,no motion interface
+sim/tb_cascade_config.v:33: $finish called at 605740000 (1ps)

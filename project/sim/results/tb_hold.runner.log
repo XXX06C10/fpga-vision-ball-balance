@@ -1,0 +1,11 @@
+Composed vision_monitor_all.v
+HOLD_FAULT_PASS code=3 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=4 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=5 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=6 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=7 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=8 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=2 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_FAULT_PASS code=1 EN retained until explicit release,STEP inhibited,no fault restart
+HOLD_ALL_PASS: all8guards,established EN retained,K1 release-only,K4 immediate,no replay
+sim/tb_hold.v:5: $finish called at 3840000 (1ps)
