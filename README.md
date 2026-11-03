@@ -84,4 +84,3 @@ project/     Logo + brake_precise6 + UART 修复工程
 
 </details>
 
-本仓库为私有作品展示与工程归档。第三方 IP 和原始版权声明保持原样，未附加新的开源许可。
